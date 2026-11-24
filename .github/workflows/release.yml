@@ -85,7 +85,13 @@ jobs:
           existing=$(gh api --paginate "repos/$GH_REPO/releases?per_page=100" |
             jq -r --arg tag "$TAG" '.[] | select(.tag_name == $tag) | .draft')
           case "$existing" in
-            '') gh release create "$TAG" --draft --verify-tag --title "MDL Optimizer $TAG" --notes-from-tag "$zip" "$zip.sha256" ;;
+            '')
+              tag_sha=$(gh api "repos/$GH_REPO/git/ref/tags/$TAG" --jq '.object | select(.type == "tag") | .sha')
+              if [[ -z "$tag_sha" ]]; then echo "Release notes require an annotated tag." >&2; exit 1; fi
+              notes="$RUNNER_TEMP/release-notes.md"
+              gh api "repos/$GH_REPO/git/tags/$tag_sha" --jq .message > "$notes"
+              gh release create "$TAG" --draft --verify-tag --title "MDL Optimizer $TAG" --notes-file "$notes" "$zip" "$zip.sha256"
+              ;;
             true) gh release upload "$TAG" "$zip" "$zip.sha256" --clobber ;;
             *) echo "This release has already been published." >&2; exit 1 ;;
           esac
@@ -94,6 +100,7 @@ jobs:
             digest="sha256:$(sha256sum "$file" | cut -d ' ' -f 1)"
             jq -e --arg name "$file" --arg digest "$digest" \
               '.isDraft and any(.assets[]; .name == $name and .state == "uploaded" and .digest == $digest)' <<< "$release" >/dev/null
+            echo "$digest  $file"
           done
           url=$(jq -r '.url' <<< "$release")
           echo "Verified both assets on the draft: $url"
