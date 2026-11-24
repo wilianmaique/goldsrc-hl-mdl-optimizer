@@ -1,0 +1,100 @@
+name: Windows build and draft release
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+    tags: ['v*']
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build and test Windows x64
+    runs-on: windows-2022
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Build the portable package
+        run: .\build.ps1
+
+      - name: Run the regression suite
+        run: .\tests\Run-Tests.ps1 -SkipBuild
+
+      - name: Test the packaged CLI and calculate its archive checksum
+        shell: pwsh
+        run: |
+          $archive = Get-Item -LiteralPath 'dist/MDL-Optimizer-Windows-x64.zip'
+          $extracted = Join-Path $env:RUNNER_TEMP 'mdl-optimizer-package'
+          Expand-Archive -LiteralPath $archive.FullName -DestinationPath $extracted
+          $cli = Join-Path $extracted 'MdlOptimizer.Cli.exe'
+          $info = & $cli info 'tests/fixtures/piramide.mdl' | ConvertFrom-Json
+          if ($LASTEXITCODE -ne 0 -or $info.triangles -ne 7) { throw 'Packaged CLI failed the sample check.' }
+          if ($env:GITHUB_REF_TYPE -eq 'tag') {
+              $helpText = & $cli --lang en --help
+              if ($LASTEXITCODE -ne 0 -or $helpText[0] -notmatch '^MDL Optimizer (\d+\.\d+\.\d+)$') { throw 'Cannot read the application version.' }
+              if ($env:GITHUB_REF_NAME -cne "v$($Matches[1])") { throw 'The release tag must match the packaged application version.' }
+          }
+          $sha = (Get-FileHash -LiteralPath $archive.FullName -Algorithm SHA256).Hash.ToLowerInvariant()
+          [IO.File]::WriteAllText(($archive.FullName + '.sha256'), "$sha  $($archive.Name)`n", [Text.Encoding]::ASCII)
+
+      - name: Save tested release files
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: windows-x64
+          path: |
+            dist/MDL-Optimizer-Windows-x64.zip
+            dist/MDL-Optimizer-Windows-x64.zip.sha256
+          if-no-files-found: error
+          compression-level: 0
+
+  draft:
+    name: Prepare draft for manual publication
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    concurrency:
+      group: release-${{ github.ref }}
+      cancel-in-progress: false
+    steps:
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: windows-x64
+          path: package
+
+      - name: Attach verified files to the release draft
+        working-directory: package
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          TAG: ${{ github.ref_name }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          zip=MDL-Optimizer-Windows-x64.zip
+          sha256sum --check "$zip.sha256"
+          existing=$(gh api --paginate "repos/$GH_REPO/releases?per_page=100" |
+            jq -r --arg tag "$TAG" '.[] | select(.tag_name == $tag) | .draft')
+          case "$existing" in
+            '') gh release create "$TAG" --draft --verify-tag --title "MDL Optimizer $TAG" --notes-from-tag "$zip" "$zip.sha256" ;;
+            true) gh release upload "$TAG" "$zip" "$zip.sha256" --clobber ;;
+            *) echo "This release has already been published." >&2; exit 1 ;;
+          esac
+          release=$(gh release view "$TAG" --json isDraft,url,assets)
+          for file in "$zip" "$zip.sha256"; do
+            digest="sha256:$(sha256sum "$file" | cut -d ' ' -f 1)"
+            jq -e --arg name "$file" --arg digest "$digest" \
+              '.isDraft and any(.assets[]; .name == $name and .state == "uploaded" and .digest == $digest)' <<< "$release" >/dev/null
+          done
+          url=$(jq -r '.url' <<< "$release")
+          echo "Verified both assets on the draft: $url"
+          echo "[Review the release draft]($url)" >> "$GITHUB_STEP_SUMMARY"

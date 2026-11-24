@@ -1,0 +1,15 @@
+# Arquivos de trabalho desta máquina
+/.dev/
+/mdl tests/
+/.vs/
+Thumbs.db
+Desktop.ini
+
+# Pacotes, relatórios e modelos gerados
+/dist/
+/artifacts/
+/testes-20??????-??????/
+/resultados-testes/
+/resultados-v*/
+*.mdl
+!/tests/fixtures/piramide.mdl

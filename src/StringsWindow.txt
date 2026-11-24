@@ -1,0 +1,45 @@
+queue.title	Modelos	Models	Modelos	Модели
+queue.add	Adicionar .mdl	Add .mdl	Añadir .mdl	Добавить .mdl
+queue.clear	Limpar	Clear	Vaciar	Очистить
+queue.drop	Arraste arquivos .mdl para esta janela.	Drag .mdl files into this window.	Arrastra archivos .mdl a esta ventana.	Перетащите файлы .mdl в это окно.
+queue.pending	Na fila	Queued	En cola	В очереди
+queue.running	Em análise	Analyzing	En análisis	Анализ
+queue.review	Revisar visual	Needs review	Para revisión	На проверку
+queue.done	Concluído	Completed	Completado	Готово
+queue.cancelled	Cancelado	Canceled	Cancelado	Отменено
+queue.failed	Falhou	Failed	Error	Ошибка
+queue.empty	Selecione um modelo para começar.	Select a model to get started.	Selecciona un modelo para empezar.	Выберите модель, чтобы начать.
+queue.single	1 modelo na lista.	1 model in the list.	1 modelo en la lista.	В очереди одна модель.
+queue.count	{0:N0} modelos na lista.	{0:N0} models in the list.	{0:N0} modelos en la lista.	Моделей в очереди: {0:N0}.
+preview.title	Comparação visual	Visual comparison	Comparación	Сравнение
+preview.whole	Corpo inteiro	Full body	Cuerpo entero	Вся модель
+preview.differences	Diferenças	Differences	Diferencias	Различия
+preview.original	Original	Original	Original	Оригинал
+preview.optimized	Otimizado	Optimized	Optimizado	После оптимизации
+preview.unavailable	Prévia indisponível · {0}	Preview unavailable · {0}	Vista previa no disponible · {0}	Предпросмотр недоступен · {0}
+options.saveTo	Salvar em	Save to	Guardar en	Сохранить в
+options.output	Pasta de saída	Output folder	Carpeta de salida	Папка для результатов
+options.browse	Escolher pasta	Choose folder	Elegir carpeta	Выбрать папку
+options.validation	Validação	Validation	Validación	Проверка
+options.full	Completa	Full	Completa	Полная
+options.fast	Rápida	Quick	Rápida	Быстрая
+options.exact	Somente cópia exata	Exact copy only	Solo copia exacta	Только точная копия
+options.outputRequired	Escolha uma pasta de saída.	Choose an output folder.	Elige una carpeta de salida.	Выберите папку для результатов.
+actions.open	Abrir pasta do resultado	Open result folder	Abrir carpeta de salida	Открыть папку
+actions.cancel	Cancelar	Cancel	Cancelar	Отмена
+actions.start	Otimizar	Optimize	Optimizar	Оптимизировать
+dialog.modelFilter	Modelo GoldSrc (*.mdl)	GoldSrc model (*.mdl)	Modelo GoldSrc (*.mdl)	Модель GoldSrc (*.mdl)
+dialog.addModels	Adicionar modelos GoldSrc	Add GoldSrc models	Añadir modelos GoldSrc	Добавить модели GoldSrc
+dialog.chooseOutput	Escolha a pasta onde as novas cópias serão salvas.	Choose a folder for the new copies.	Elige una carpeta para guardar las nuevas copias.	Выберите папку для сохранения новых копий.
+audit.title	Auditoria reservada	Held-out audit	Auditoría de vistas reservadas	Проверка на отложенных ракурсах
+audit.passed	Auditoria reservada aprovada em {0:N0} vistas.	Held-out audit passed across {0:N0} views.	Auditoría superada en {0:N0} vistas reservadas.	Проверка пройдена. Отложенных ракурсов проверено: {0:N0}.
+audit.outliers	{0:N0} de {1:N0} vistas fora dos limites.	{0:N0} of {1:N0} views outside tolerance.	{0:N0} de {1:N0} vistas fuera de los límites.	Вне допуска: {0:N0} из {1:N0}.
+audit.global	limite global excedido em {0:N0} vistas.	overall tolerance exceeded across {0:N0} views.	se superó el límite global en {0:N0} vistas.	Превышен общий допуск. Ракурсов проверено: {0:N0}.
+audit.failed	Auditoria reservada reprovada · {0}\nVeja auditoria-reservada.png ou use a cópia exata.	Held-out audit failed · {0}\nSee auditoria-reservada.png or use the exact copy.	Auditoría de vistas reservadas fallida · {0}\nConsulta auditoria-reservada.png o usa la copia exacta.	Проверка на отложенных ракурсах не пройдена · {0}\nСм. auditoria-reservada.png или используйте точную копию.
+result.lastFolder	Último modelo salvo em {0}	Last model saved in {0}	Último modelo guardado en {0}	Последняя модель сохранена в {0}
+result.summary	{0:N0} → {1:N0} triângulos no arquivo   ·   {2:P1} de redução	{0:N0} → {1:N0} triangles in file   ·   {2:P1} reduction	{0:N0} → {1:N0} triángulos en el archivo   ·   {2:P1} de reducción	Треугольников в файле: {0:N0} → {1:N0}   ·   Сокращение на {2:P1}
+result.views	{0:N0} vistas   ·   {1}	{0:N0} views   ·   {1}	{0:N0} vistas   ·   {1}	Ракурсов: {0:N0}   ·   {1}
+result.folderMissing	Pasta do resultado indisponível · {0}	Result folder unavailable · {0}	La carpeta de resultados no está disponible · {0}	Папка с результатом недоступна · {0}
+result.folderError	Não foi possível abrir a pasta · {0}	Could not open the folder · {0}	No se pudo abrir la carpeta · {0}	Не удалось открыть папку · {0}
+run.summary	Concluídos: {0:N0}   ·   Falhas: {1:N0}	Completed: {0:N0}   ·   Failed: {1:N0}	Completados: {0:N0}   ·   Fallidos: {1:N0}	Готово: {0:N0}   ·   Ошибок: {1:N0}
+run.reviews	Para revisão visual: {0:N0}	To review: {0:N0}	Para revisión visual: {0:N0}	На визуальную проверку: {0:N0}

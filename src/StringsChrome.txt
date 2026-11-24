@@ -1,0 +1,16 @@
+chrome.subtitle	Otimizador de modelos MDL	MDL model optimizer	Optimizador de modelos MDL	Оптимизатор моделей MDL
+chrome.language	Idioma	Language	Idioma	Язык
+chrome.systemLanguage	Idioma do sistema	System language	Idioma del sistema	Язык системы
+chrome.sessionOnly	Não foi possível salvar o idioma escolhido. A escolha vale até você fechar o aplicativo.	The language preference could not be saved. Your choice applies until you close the app.	No se pudo guardar el idioma elegido. La selección se mantendrá hasta que cierres la aplicación.	Не удалось сохранить выбранный язык. Он будет использоваться до закрытия приложения.
+chrome.minimize	Minimizar	Minimize	Minimizar	Свернуть
+chrome.maximize	Maximizar	Maximize	Maximizar	Развернуть
+chrome.restore	Restaurar	Restore	Restaurar	Восстановить
+chrome.close	Fechar	Close	Cerrar	Закрыть
+chrome.queue	Fila de modelos	Model queue	Cola de modelos	Очередь моделей
+chrome.file	Arquivo	File	Archivo	Файл
+chrome.state	Estado	Status	Estado	Состояние
+chrome.emptyPreview	A comparação aparecerá após a otimização.	The comparison will appear after optimization.	La comparación aparecerá después de la optimización.	После оптимизации здесь появится сравнение.
+chrome.preview	Prévia das diferenças visuais	Visual difference preview	Vista previa de las diferencias visuales	Предпросмотр визуальных различий
+chrome.split	Divisão entre original e otimizado	Split between original and optimized models	División entre el modelo original y el optimizado	Граница между исходной и оптимизированной моделями
+chrome.progress	Progresso da otimização	Optimization progress	Progreso de la optimización	Ход оптимизации
+chrome.queueScroll	Rolagem da fila de modelos	Scroll model queue	Desplazamiento de la cola de modelos	Прокрутка очереди моделей

@@ -1,0 +1,11 @@
+* text=auto
+*.ps1 text eol=crlf
+*.cs text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.qc text eol=lf
+*.smd text eol=lf
+*.mdl binary
+*.bmp binary
+*.ico binary
+*.png binary

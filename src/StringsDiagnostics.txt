@@ -1,0 +1,95 @@
+studio.coordinate	coordenada não finita	non-finite coordinate	coordenada no finita	значение координаты не является конечным
+studio.studioSize	tamanho do arquivo Studio	invalid Studio file size	tamaño del archivo Studio no válido	недопустимый размер файла Studio
+studio.companionBounds	limites do arquivo complementar	data outside the companion file bounds	datos fuera de los límites del archivo complementario	данные выходят за границы сопутствующего файла
+studio.groupsTextures	grupos ou texturas	invalid groups or textures	grupos o texturas no válidos	недопустимые группы или текстуры
+studio.sequenceCount	quantidade de sequências	invalid sequence count	cantidad de secuencias no válida	недопустимое число последовательностей
+studio.sequenceGroupIndex	índice do grupo de sequência	invalid sequence group index	índice de grupo de secuencias no válido	недопустимый индекс группы последовательностей
+studio.familySize	família de modelos maior que 256 MiB	model family exceeds 256 MiB	la familia de modelos supera los 256 MiB	семейство моделей превышает 256 МиБ
+studio.idsqOffset	offset IDSQ abaixo do cabeçalho	IDSQ offset points inside the header	el desplazamiento IDSQ apunta al interior de la cabecera	смещение IDSQ указывает внутрь заголовка
+studio.externalTextureTables	tabelas da textura externa	invalid external texture tables	tablas de texturas externas no válidas	недопустимые таблицы внешних текстур
+studio.externalTextureSize	dimensões da textura externa	invalid external texture dimensions	dimensiones de textura externa no válidas	недопустимые размеры внешней текстуры
+studio.headerFormat	esperado IDST GoldSrc versão 10	expected GoldSrc IDST version 10	se esperaba IDST de GoldSrc, versión 10	ожидался формат GoldSrc IDST версии 10
+studio.fileLength	comprimento declarado diferente do arquivo	declared length differs from the file size	la longitud declarada no coincide con el tamaño del archivo	длина в заголовке отличается от размера файла
+studio.boneCount	quantidade de ossos	invalid bone count	cantidad de huesos no válida	недопустимое число костей
+studio.boneHierarchy	hierarquia de ossos	invalid bone hierarchy	jerarquía de huesos no válida	ошибка в иерархии костей
+studio.transitionTable	tabela de transições	invalid transition table	tabla de transiciones no válida	недопустимая таблица переходов
+studio.partCount	quantidade de partes	invalid body part count	cantidad de partes del cuerpo no válida	недопустимое число частей модели
+studio.bodygroupOptions	alternativas de bodygroup	invalid bodygroup options	variantes de bodygroup no válidas	недопустимые варианты группы частей модели
+studio.boneIndex	índice de osso	invalid bone index	índice de hueso no válido	недопустимый индекс кости
+studio.textureCount	quantidade de texturas	invalid texture count	cantidad de texturas no válida	недопустимое число текстур
+studio.textureSize	dimensão de textura	invalid texture dimensions	dimensiones de textura no válidas	недопустимые размеры текстуры
+studio.textureOverlap	dados de textura sobrepostos em excesso	excessive overlap in texture data	solapamiento excesivo de datos de textura	слишком много перекрывающихся данных текстур
+studio.skinFamilies	famílias de textura	invalid skin families	familias de texturas no válidas	недопустимые семейства текстур
+studio.textureIndex	índice de textura	invalid texture index	índice de textura no válido	недопустимый индекс текстуры
+studio.sequenceGroups	grupos de sequência	invalid sequence groups	grupos de secuencias no válidos	недопустимые группы последовательностей
+studio.sequenceGroup	grupo de sequência	invalid sequence group	grupo de secuencias no válido	недопустимая группа последовательностей
+studio.animationSize	dimensão de animação	invalid animation dimensions	dimensiones de animación no válidas	недопустимые размеры данных анимации
+studio.channelsOutsideGroup	canais fora do grupo de animação	channels outside their animation group	canales fuera del grupo de animación	каналы выходят за границы группы анимации
+studio.channelOutsideGroup	canal fora do grupo de animação	channel outside its animation group	canal fuera del grupo de animación	канал выходит за границы группы анимации
+studio.rleRun	run de animação RLE	invalid animation RLE run	serie RLE de animación no válida	недопустимая серия RLE в анимации
+studio.channelOverlap	canais de animação sobrepostos em excesso	excessive overlap in animation channels	solapamiento excesivo de canales de animación	слишком много перекрывающихся каналов анимации
+studio.rleChannelOutsideGroup	canal RLE fora do grupo de animação	RLE channel outside its animation group	canal RLE fuera del grupo de animación	канал RLE выходит за границы группы анимации
+studio.submodelSize	dimensões do submodelo	invalid submodel dimensions	dimensiones del submodelo no válidas	недопустимые размеры подмодели
+studio.meshMaterialNormals	material ou faixa de normais	invalid material or normal range	material o intervalo de normales no válido	недопустимый материал или диапазон нормалей
+studio.triangleCount	contagem de triângulos	invalid triangle count	cantidad de triángulos no válida	недопустимое число треугольников
+studio.meshStripFan	strip/fan da malha	invalid mesh strip or fan	banda o abanico de triángulos de la malla no válido	недопустимая полоса или веер треугольников сетки
+studio.meshOverlap	malhas sobrepostas em excesso	excessive mesh overlap	solapamiento excesivo de mallas	слишком много перекрывающихся сеток
+studio.vertexNormalIndex	índice de vértice ou normal	invalid vertex or normal index	índice de vértice o de normal no válido	недопустимый индекс вершины или нормали
+studio.commandTriangles	triângulos divergentes dos comandos	triangles differ from the mesh commands	los triángulos no coinciden con los comandos de la malla	треугольники не соответствуют командам сетки
+studio.submodelNormals	total de normais do submodelo	incorrect submodel normal count	cantidad incorrecta de normales del submodelo	неверное число нормалей подмодели
+studio.metadataChanged	dados de animação, esqueleto ou metadados alterados	animation data, skeleton or metadata changed	han cambiado los datos de animación, el esqueleto o los metadatos	изменились данные анимации, скелет или метаданные
+studio.structureChanged	estrutura alterada	model structure changed	ha cambiado la estructura del modelo	изменилась структура модели
+studio.textureChanged	textura ou paleta alterada	texture or palette changed	ha cambiado la textura o la paleta	изменилась текстура или палитра
+studio.skinFamilyChanged	família de textura alterada	skin family changed	ha cambiado la familia de texturas	изменилось семейство текстур
+studio.skinSelectionChanged	seleção de textura alterada	texture selection changed	ha cambiado la selección de texturas	изменился выбор текстуры
+studio.bodygroupChanged	bodygroup alterado	bodygroup changed	ha cambiado el bodygroup	изменилась группа частей модели
+studio.materialCountChanged	quantidade de materiais alterada	material count changed	ha cambiado la cantidad de materiales	изменилось число материалов
+studio.meshMaterialChanged	material de malha alterado	mesh material changed	ha cambiado el material de la malla	изменился материал сетки
+studio.cornerBounds	canto de saída fora dos limites	output triangle corner out of range	vértice del triángulo de salida fuera de los límites	данные угла выходного треугольника вне допустимого диапазона
+studio.vertexCompaction	compactação de vértices divergente	vertex compaction mismatch	la compactación de vértices no coincide con la esperada	результат уплотнения вершин не соответствует ожидаемому
+studio.normalCompaction	compactação de normais divergente	normal compaction mismatch	la compactación de normales no coincide con la esperada	результат уплотнения нормалей не соответствует ожидаемому
+studio.vertexBoneChanged	vértice ou osso alterado	vertex or bone changed	ha cambiado un vértice o un hueso	изменилась вершина или кость
+studio.normalBoneChanged	normal ou osso alterado	normal or bone changed	ha cambiado una normal o un hueso	изменилась нормаль или кость
+studio.exportedCount	contagem exportada divergente	exported face count differs from the expected count	la cantidad de caras exportadas no coincide con la esperada	число экспортированных граней отличается от ожидаемого
+studio.exportOrder	orientação, atributos ou ordem exportada divergente	exported winding, attributes or face order differ from the expected values	la orientación, los atributos o el orden de las caras exportadas difieren de lo esperado	ориентация, атрибуты или порядок экспортированных граней отличаются от ожидаемых
+studio.exportAttributes	orientação ou atributos exportados divergentes	exported winding or attributes differ from the expected values	la orientación o los atributos exportados difieren de lo esperado	ориентация или атрибуты экспортированных граней отличаются от ожидаемых
+section.geometry	geometria	geometry	geometría	геометрия
+section.sequenceGroups	grupos de sequência	sequence groups	grupos de secuencias	группы последовательностей
+section.sequences	sequências	sequences	secuencias	последовательности
+section.header	cabeçalho	header	cabecera	заголовок
+section.bones	ossos	bones	huesos	кости
+section.controllers	controladores	controllers	controladores	контроллеры
+section.hitboxes	hitboxes	hitboxes	cajas de impacto	хитбоксы
+section.attachments	attachments	attachments	puntos de anclaje	точки крепления
+section.transitions	transições	transitions	transiciones	переходы
+section.parts	partes	body parts	partes del cuerpo	части модели
+section.submodels	submodelos	submodels	submodelos	подмодели
+section.textures	texturas	textures	texturas	текстуры
+section.pixelsPalette	pixels e paleta	pixels and palette	píxeles y paleta	пиксели и палитра
+section.skins	skins	skins	apariencias	скины
+section.events	eventos	events	eventos	события
+section.pivots	pivôs	pivots	pivotes	точки вращения
+section.animationChannels	canais de animação	animation channels	canales de animación	каналы анимации
+section.rleStart	início de canal RLE	start of RLE channel	inicio de canal RLE	начало канала RLE
+section.rleValues	valores de animação RLE	RLE animation values	valores de animación RLE	значения анимации RLE
+section.meshCommand	comando de malha	mesh command	comando de malla	команда сетки
+section.stripFanVertices	vértices do strip/fan	strip or fan vertices	vértices de la banda o del abanico	вершины полосы или веера
+studio.invalidModel	MDL inválido: {0}.	Invalid MDL: {0}.	MDL no válido: {0}.	Некорректный MDL: {0}.
+studio.sectionBounds	seção fora dos limites ({0})	section outside file bounds ({0})	sección fuera de los límites del archivo ({0})	данные раздела выходят за границы файла ({0})
+studio.sectionCount	contagem inválida na seção ({0})	invalid item count in section ({0})	cantidad de elementos no válida en la sección ({0})	недопустимое число элементов раздела ({0})
+studio.companionSize	tamanho de {0}	invalid size for {0}	tamaño no válido de {0}	недопустимый размер файла {0}
+studio.companionSignature	assinatura ou comprimento de {0}	invalid signature or length in {0}	firma o longitud no válida en {0}	недопустимая сигнатура или длина файла {0}
+studio.overflow	MDL inválido: contagem ou deslocamento excede o formato.	Invalid MDL: a count or offset exceeds the format limits.	MDL no válido: una cantidad o un desplazamiento supera los límites del formato.	Некорректный MDL: число элементов или смещение превышает ограничения формата.
+studio.missingCompanion	Arquivo complementar do modelo ausente. Coloque {0} na pasta do MDL principal.	A model companion file is missing. Place {0} in the same folder as the main MDL.	Falta un archivo complementario del modelo. Coloca {0} en la misma carpeta que el MDL principal.	Отсутствует сопутствующий файл модели. Поместите {0} в папку с основным файлом MDL.
+studio.externalTextures	Modelo com texturas externas (T.mdl). Esta versão aceita texturas incorporadas ao MDL.	The model uses external textures (T.mdl). This version requires textures embedded in the MDL.	El modelo usa texturas externas (T.mdl). Esta versión requiere texturas integradas en el MDL.	Модель использует внешние текстуры (T.mdl). Эта версия требует, чтобы текстуры были встроены в MDL.
+studio.deformationGroups	Grupos de deformação especiais não são suportados.	Special deformation groups are unsupported.	No se admiten grupos de deformación especiales.	Специальные группы деформации не поддерживаются.
+studio.normalIndexLayout	Layout especial de índices de normais.	Unsupported normal index layout.	Disposición de índices de normales no compatible.	Неподдерживаемый формат индексов нормалей.
+studio.destinationExists	O arquivo de destino já existe: {0}	The destination file already exists: {0}	El archivo de destino ya existe: {0}	Файл назначения уже существует: {0}
+studio.nullFaceList	Lista de faces nula.	The face list is null.	La lista de caras es nula.	Список граней не задан.
+studio.foreignMesh	Malha de outro modelo.	The mesh belongs to a different model.	La malla pertenece a otro modelo.	Сетка принадлежит другой модели.
+studio.internalName	Nome interno muito longo ou inválido.	The internal name is too long or invalid.	El nombre interno es demasiado largo o no es válido.	Внутреннее имя слишком длинное или недопустимо.
+geometry.regionFace	A face da região não pertence à superfície de referência.	The region's face does not belong to the reference surface.	La cara de la región no pertenece a la superficie de referencia.	Грань области не принадлежит исходной поверхности.
+geometry.nestedCapture	Captura de simplificação aninhada.	A simplification capture is already in progress.	Ya hay una captura de simplificación en curso.	Запись операций упрощения уже выполняется.
+visibility.missingMesh	Falta a malha exata para a medição de visibilidade.	The exact mesh is missing for the visibility measurement.	Falta la malla exacta para medir la visibilidad.	Для измерения видимости отсутствует точная сетка.
+path.empty	O caminho está vazio.	The path is empty.	La ruta está vacía.	Путь пуст.
+path.unsupported	Use um caminho de arquivo em uma unidade ou compartilhamento de rede.	Use a file path on a drive or a network share.	Usa una ruta de archivo en una unidad o un recurso compartido de red.	Укажите путь к файлу на диске или в общей сетевой папке.

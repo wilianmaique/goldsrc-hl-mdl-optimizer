@@ -1,0 +1,63 @@
+Core.ChooseOutput	Escolha a pasta de saída.	Choose an output folder.	Elige la carpeta de destino.	Выберите папку для сохранения.
+Core.ExactCountMismatch	Contagem inconsistente na cópia exata.	The triangle count in the exact copy is inconsistent.	El número de triángulos de la copia exacta es incoherente.	Число треугольников в точной копии не совпадает с ожидаемым.
+Core.RenderMismatch	A cópia de controle divergiu na renderização.	The control copy rendered differently from the original.	La imagen de la copia de control difiere de la original.	При отрисовке контрольная копия отличается от оригинала.
+Core.ExportCountMismatch	O MDL exportado tem contagem diferente da candidata.	The exported MDL has a different triangle count from the candidate.	El número de triángulos del MDL exportado difiere del de la versión candidata.	Число треугольников в экспортированном MDL отличается от числа в проверяемой версии.
+Core.FinalMismatch	A cópia final divergiu do controle.	The final copy differs from the control copy.	La copia final difiere de la copia de control.	Итоговая копия отличается от контрольной.
+Core.OriginalHeldOutMismatch	A geometria original divergiu na auditoria reservada.	The original geometry produced different results in the held-out views.	La geometría original dio resultados diferentes en las vistas reservadas.	Проверка на отложенных ракурсах выявила расхождение в исходной геометрии.
+Core.GameGeometryMismatch	A cópia de jogo divergiu da geometria original.	The game copy differs from the original geometry.	La copia para el juego difiere de la geometría original.	Геометрия игровой копии отличается от исходной.
+Core.GameHeldOutMismatch	A cópia de jogo divergiu do controle na auditoria reservada.	The game copy differs from the control copy in the held-out views.	La copia para el juego difiere de la copia de control en las vistas reservadas.	Игровая и контрольная копии различаются на отложенных ракурсах.
+Core.InputChanged	Uma entrada foi alterada durante a otimização. Execute novamente com os arquivos atualizados.	An input file changed during optimization. Run again with the updated files.	Un archivo de entrada cambió durante la optimización. Vuelve a ejecutar el proceso con los archivos actualizados.	Один из исходных файлов изменился во время оптимизации. Запустите процесс снова с обновлёнными файлами.
+Core.RegionalCountMismatch	Contagem divergente na candidata regional.	The triangle count of the regional candidate is inconsistent.	El número de triángulos de la versión candidata regional es incoherente.	Число треугольников в варианте с локальными изменениями не совпадает с ожидаемым.
+Core.StructureMismatch	A estrutura do modelo exportado difere do original.	The structure of the exported model differs from the original.	La estructura del modelo exportado difiere de la original.	Структура экспортированной модели отличается от исходной.
+Core.NoSurface	Nenhuma superfície visível nas câmeras de auditoria.	No surfaces are visible from the validation cameras.	Ninguna superficie es visible desde las cámaras de validación.	Ни одна поверхность не видна с проверочных ракурсов.
+Progress.Read	Lendo o modelo e suas animações	Reading the model and its animations	Leyendo el modelo y sus animaciones	Чтение модели и её анимаций
+Progress.RemoveFaces	Removendo faces redundantes	Removing redundant faces	Eliminando caras redundantes	Удаление избыточных граней
+Progress.CompareExact	Comparando a cópia exata com o original	Comparing the exact copy with the original	Comparando la copia exacta con el original	Сравнение точной копии с оригиналом
+Progress.ValidateExact	Validando a cópia exata	Validating the exact copy	Validando la copia exacta	Проверка точной копии
+Progress.CheckGeometry	Conferindo a geometria original	Checking the original geometry	Comprobando la geometría original	Проверка исходной геометрии
+Progress.Simplify	Gerando níveis de simplificação	Generating simplification levels	Generando niveles de simplificación	Создание уровней упрощения
+Progress.Triangles	{0} · Triângulos: {1:N0}	{0} · Triangles: {1:N0}	{0} · Triángulos: {1:N0}	{0} · Треугольников: {1:N0}
+Progress.Screen	Triagem de {0}	Screening {0}	Evaluando {0}	Предварительная проверка: {0}
+Progress.VerifyExport	Verificando o MDL exportado · {0}	Checking the exported MDL · {0}	Comprobando el MDL exportado · {0}	Проверка экспортированного MDL · {0}
+Progress.FinalTest	Teste final · {0} · {1}/{2}	Final test · {0} · {1}/{2}	Prueba final · {0} · {1}/{2}	Итоговая проверка · {0} · {1}/{2}
+Progress.CheckGameCopy	Verificando a cópia para jogo	Checking the game copy	Comprobando la copia para el juego	Проверка игровой копии
+Progress.CheckHeldOut	Conferindo o arquivo final em câmeras reservadas	Checking the final file against held-out views	Comprobando el archivo final con las vistas reservadas	Проверка итогового файла на отложенных ракурсах
+Progress.Save	Salvando comparação e relatório	Saving the comparison and report	Guardando la comparación y el informe	Сохранение сравнения и отчёта
+Progress.MeasurePoses	Medindo quais superfícies aparecem nas poses	Measuring surface visibility across poses	Midiendo la visibilidad de las superficies en las distintas poses	Оценка видимости поверхностей в разных позах
+Profile.Exact	Exato	Exact	Exacto	Точный
+Profile.Light	Leve	Light	Leve	Слабое упрощение
+Profile.Moderate	Moderado	Moderate	Moderado	Умеренное упрощение
+Profile.Strong	Forte	Strong	Fuerte	Сильное упрощение
+Profile.Intense	Intenso	Intense	Intenso	Максимальное упрощение
+Profile.Protected	{0} · extremidades protegidas	{0} · protected extremities	{0} · extremidades protegidas	{0} · с защитой конечностей
+Profile.RegionRepair	{0} · reparo regional {1}	{0} · regional repair {1}	{0} · reparación regional {1}	{0} · восстановление области {1}
+Profile.LocalRepair	{0} com reparo local	{0} with local repair	{0} con reparación local	{0} с локальным восстановлением
+Profile.Contours	{0} · contornos {1}	{0} · contours {1}	{0} · contornos {1}	{0} · контуры {1}
+Profile.Iteration	{0} · {1}	{0} · {1}	{0} · {1}	{0} · {1}
+Profile.Group	{0} · grupo {1}	{0} · group {1}	{0} · grupo {1}	{0} · группа {1}
+Profile.Visibility	Visibilidade {0}	Visibility {0}	Visibilidad {0}	Видимость {0}
+Profile.ContourRepair	Base com reparo de contorno	Base with contour repair	Base con reparación de contornos	Базовая версия с восстановлением контуров
+Profile.Rollback	Reversão regional	Regional rollback	Reversión regional	Откат изменений в области
+Profile.Refinement	Refinamento {0}	Refinement {0}	Refinamiento {0}	Доработка {0}
+Profile.RefineProtected	Refinamento com regiões protegidas {0}	Refinement with protected regions {0}	Refinamiento con regiones protegidas {0}	Доработка с защищёнными областями {0}
+View.Body	Corpo	Body	Cuerpo	Всё тело
+View.Detail	Detalhe {0}	Detail {0}	Detalle {0}	Деталь {0}
+View.Spatial	Detalhe espacial {0}	Spatial detail {0}	Detalle espacial {0}	Детализация области {0}
+View.ExtraBody	Corpo complementar	Additional body view	Vista adicional del cuerpo	Дополнительный ракурс тела
+View.ExtraDetail	Detalhe complementar {0}	Additional detail {0}	Detalle adicional {0}	Дополнительный ракурс детали {0}
+View.ExtraSpatial	Detalhe espacial complementar	Additional spatial detail	Detalle espacial adicional	Дополнительная детализация области
+View.Bodygroup	Bodygroup {0}[{1}]	Bodygroup {0}[{1}]	Grupo de partes {0}[{1}]	Группа частей {0}[{1}]
+View.SkinFamily	Família	Skin family	Familia de texturas	Семейство текстур
+View.Sequence	Sequência	Sequence	Secuencia	Анимация
+View.BindPose	Pose de referência	Bind pose	Pose de referencia	Исходная поза
+View.Camera	{0} · {1} · f{2} b{3} · {4:0}°/{5:0}°	{0} · {1} · f{2} b{3} · {4:0}°/{5:0}°	{0} · {1} · f{2} b{3} · {4:0}°/{5:0}°	{0} · {1} · f{2} b{3} · {4:0}°/{5:0}°
+View.ReservedCamera	{0} · {1} · f{2} b{3} · {4:F2}°/{5:F2}°	{0} · {1} · f{2} b{3} · {4:F2}°/{5:F2}°	{0} · {1} · f{2} b{3} · {4:F2}°/{5:F2}°	{0} · {1} · f{2} b{3} · {4:F2}°/{5:F2}°
+View.Skin	{0} · skin {1}	{0} · skin {1}	{0} · textura {1}	{0} · скин {1}
+Legend.Original	Original	Original	Original	Оригинал
+Legend.Optimized	Otimizada	Optimized	Optimizada	После оптимизации
+Legend.Differences	Diferenças	Differences	Diferencias	Различия
+Legend.Outline	Silhueta	Silhouette	Silueta	Силуэт
+Legend.Depth	Profundidade	Depth	Profundidad	Глубина
+Legend.Material	Material	Material	Material	Материал
+Legend.Rgb	Cor RGB ×8	RGB color ×8	Color RGB ×8	Цвет RGB ×8
+Legend.MaterialDepth	Material e profundidade	Material and depth	Material y profundidad	Материал и глубина
